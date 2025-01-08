@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aland Pratama - Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #18123d;
+            background: #f5f5f5;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background: #293e57;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background: #00d4b1;
+            border-radius: 5px;
+        }
+
+        /* Header Section */
+        header {
+            background: #00d4b1;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin-top: 60px; /* To avoid content hiding behind the navbar */
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            border: 4px solid white;
+        }
+
+        .profile h1 {
+            margin: 10px 0 5px;
+        }
+
+        /* Experience Section */
+        .experience, .education, .skills, .about-me {
+            padding: 50px;
+            background: white;
+            margin-top: 20px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .experience-item, .education-item {
+            background: #00d4b1;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Skills Section */
+        .skill-cards {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .skill-card {
+            background: #00d4b1;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* Footer Bar for Instagram & Email */
+        .social-bar {
+            background: #293e57;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            background: #818181;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-bar a:hover {
+            background-color: #00a190;
+        }
+
+        /* Footer */
+        footer {
+            background: #10253b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer .social-icons a {
+            margin: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="profile">
+            <img src="PK.jpg" alt="Aland Pratama">
+            <h1 class="masthead-heading text-uppercase mb-0">ALAND PRATAMA</h1>
+            <p class="masthead-subheading font-weight-light mb-0">UI Designer - Driver - Mechanic</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-me" id="about-me">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">ABOUT ME</h2>
+        <p><strong>Birthday:</strong> June 13, 2006</p>
+        <p>I am the first child of two siblings, I am learning to gain as much experience as possible which who knows will be useful in the future.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>EXPERIENCE</h2>
+        <div class="timeline">
+            <div class="experience-item">
+                <h3>Driver</h3>
+                <p>BNI - Wonosobo</p>
+                <p>July 2024</p>
+            </div>
+            <div class="experience-item">
+                <h3>Motorcycle Mechanic</h3>
+                <p>Alvin Garage - Wonosobo</p>
+                <p>January 2020 - June 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>EDUCATION</h2>
+        <div class="timeline">
+            <div class="education-item">
+                <h3>Elementary School</h3>
+                <p>SD N 6 Wonosobo</p>
+                <p>20012 - 2018</p>
+            </div>
+            <div class="education-item">
+                <h3>Primary School</h3>
+                <p>SMP N 2 Wonosobo</p>
+                <p>2018 - 2021</p>
+            </div>
+            <div class="education-item">
+                <h3>High School</h3>
+                <p>SMA N 2 Wonosobo</p>
+                <p>2021 - 2024</p>
+            </div>
+            <div class="education-item">
+                <h3>High School Bachelor</h3>
+                <p>Yogyakarta University of Technology</p>
+                <p>2024 - 2028</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>SKILLS</h2>
+        <div class="skill-cards">
+            <div class="skill-card">
+                <h3>Professional</h3>
+                <p>UI Design - 80%</p>
+                <p>Driver - 90%</p>
+                <p>Mechanic - 70%</p>
+            </div>
+            <div class="skill-card">
+                <h3>Personal</h3>
+                <p>Committed - 100%</p>
+                <p>Loyal - 80%</p>
+                <p>Leadership - 90%</p>
+            </div>
+            <div class="skill-card">
+                <h3>Language</h3>
+                <p>English - 70%</p>
+                <p>Java - 100%</p>
+                <p>Indonesia - 100%</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Bar -->
+    <div class="social-bar">
+        <a href="https://www.instagram.com/alandpratamaa/" target="_blank">Instagram</a>
+        <a href="mailto:avederans@gmail.com">Email</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aland Pratama</p>
+    </footer>
+</body>
+</html>
